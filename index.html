@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriFit - Buscador de Recetas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-abc123..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <div class="top-nav">
+      <img src="image(1).png" alt="">
+        <i class="fas fa-home icon" title="Home"></i>
+        <i class="fas fa-search icon" title="Search"></i>
+        <i class="fas fa-cog icon" title="Settings"></i>
+        <i class="fas fa-user icon" title="Profile"></i>
+    </div>
+    <div class="content">
+        <h2>Buscador de Recetas</h2>
+        <form id="search-form">
+            <input type="text" id="query" placeholder="Buscar recetas..." />
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="filters">
+          <h3>Refinar búsqueda</h3>
+          <table>
+              <tr>
+                  <td><label for="caloriesFrom">Calorías:</label></td>
+                  <td>
+                      <input type="number" id="caloriesFrom" placeholder="Desde" />
+                      <input type="number" id="caloriesTo" placeholder="Hasta" />
+                  </td>
+              </tr>
+              <tr>
+                  <td><label for="ingredients">Ingredientes:</label></td>
+                  <td><input type="number" id="ingredients" placeholder="Hasta" /></td>
+              </tr>
+              <tr>
+                  <td><label>Dieta:</label></td>
+                  <td>
+                      <input type="checkbox" id="vegetarian" /><label for="vegetarian">Vegetariana</label>
+                      <input type="checkbox" id="vegan" /><label for="vegan">Vegana</label>
+                      <input type="checkbox" id="low-fat" /><label for="low-fat">Bajo en grasa</label>
+                      <input type="checkbox" id="low-sodium" /><label for="low-sodium">Bajo en sodio</label>
+                      <input type="checkbox" id="alcohol-free" /><label for="alcohol-free">Libre de alcohol</label>
+                  </td>
+              </tr>
+              <tr>
+                  <td><label>Alergias:</label></td>
+                  <td>
+                      <input type="checkbox" id="gluten" /><label for="gluten">Gluten</label>
+                      <input type="checkbox" id="dairy" /><label for="dairy">Lácteos</label>
+                      <input type="checkbox" id="eggs" /><label for="eggs">Huevos</label>
+                      <input type="checkbox" id="fish" /><label for="fish">Pescado</label>
+                      <input type="checkbox" id="shellfish" /><label for="shellfish">Mariscos</label>
+                      <input type="checkbox" id="soy" /><label for="soy">Soya</label>
+                      <input type="checkbox" id="peanuts" /><label for="peanuts">Manies</label>
+                      <input type="checkbox" id="tree-nuts" /><label for="tree-nuts">Frutos secos</label>
+                      <input type="checkbox" id="wheat" /><label for="wheat">Trigo</label>
+                  </td>
+              </tr>
+          </table>
+          <button type="button" id="apply-filters">Aplicar filtros</button>
+      </div>      
+        <div id="recipes-container"></div>
+    </div>
+    <script src="inicio.js"></script>
+</body>
+</html>

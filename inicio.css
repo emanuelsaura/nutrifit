@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgb(28, 190, 63), rgb(43, 0, 128), lightblue);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: white; /* Color de texto por defecto para todo el cuerpo */
+}
+
+/* Barra de navegación superior */
+.top-nav {
+    display: flex;
+    align-items: center;
+    background-color: #534e4e;
+    padding: 10px;
+}
+
+.top-nav img {
+    height: 40px; /* Altura fija para el logo */
+}
+
+.top-nav .icon {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+}
+
+/* Contenido principal */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Formulario de búsqueda */
+#search-form {
+    margin-bottom: 20px;
+}
+
+#search-form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    width: calc(100% - 80px); /* Ancho del campo de búsqueda */
+    max-width: 300px; /* Ancho máximo para el campo de búsqueda */
+}
+
+#search-form button[type="submit"] {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #534e4e;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#search-form button[type="submit"]:hover {
+    background-color: #333;
+}
+
+/* Tabla de filtros */
+#filters {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Para que los bordes redondeados no se vean cortados */
+}
+
+#filters table {
+    width: 100%;
+}
+
+#filters table td {
+    padding: 10px 0;
+}
+
+#filters table label {
+    margin-right: 10px;
+}
+
+#filters button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #534e4e;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#filters button:hover {
+    background-color: #333;
+}
+
+/* Contenedor de recetas */
+#recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Tarjeta de receta */
+.recipe-card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

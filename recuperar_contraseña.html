@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña - NutriFit</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #000000,#148e43, #0e29b2);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            color: white;
+        }
+        input[type="email"] {
+            width: 80%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            width: 80%;
+            padding: 15px;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .link {
+            color: white;
+            margin-top: 20px;
+            display: block;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>NutriFit</h2>
+        <h3>Recuperar Contraseña</h3>
+        <form action="/send-email" method="post">
+            <input type="email" name="email" placeholder="Email" required />
+            <button type="submit" class="button">Enviar</button>
+        </form>
+        <a href="inicio.html" class="link">Volver a Inicio de Sesión</a>
+    </div>
+</body>
+</html>
